@@ -21,6 +21,8 @@
     },
     "dependencies": {
         "element-ui": "^2.13.2",
+        "moment": "^2.26.0",
+        "vue": "^2.6.11",
         "vue-router": "^3.3.4"
     }
 }

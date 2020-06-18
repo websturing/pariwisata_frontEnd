@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::GET("/login", "appControl@login");
+Route::POST("/login/loginSubmit", "appControl@loginSubmit");
+Route::get("/logout", "appControl@logout");
+
+
+Route::get("/{any}", "appControl@index")->where("any", ".*");
