@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\mdUser;
+use App\model\mdUser;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 
@@ -44,9 +44,7 @@ class appControl extends Controller
                 } else {
                     Session::put("aclGroupId", $ur[0]->aclGroup_id);
                     Session::put("username", $ur[0]->username);
-                    Session::put("opd_id", $ur[0]->opd_id);
                     Session::put("user_id", $ur[0]->user_id);
-                    Session::put("perusahaan_id", $ur[0]->perusahaan_id);
 
                     return array(
                         "title"     => "Info",

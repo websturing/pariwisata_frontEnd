@@ -39,7 +39,7 @@
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center">
                     <ul class="navbar-nav">
-                        <li class="nav-item font-weight-semibold d-none d-lg-block">Pengaduaan / Pertanyaan : (+62)811-7779-727</li>
+                        <li class="nav-item font-weight-semibold d-none d-lg-block">Pengaduaan / Pertanyaan : (+62)823-6088-2020</li>
                     </ul>
                     <form class="ml-auto search-form d-none d-md-block" action="#">
                         <div class="form-group">
@@ -65,7 +65,7 @@
                                 </div>
                                 <div class="text-wrapper">
                                     <p class="profile-name"><?php echo e(Session::get('username')); ?></p>
-                                    <p class="designation">Pengguna Jasa</p>
+                                    <p class="designation">Administrator</p>
                                 </div>
                             </a>
                         </li>
@@ -77,36 +77,24 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo e(url('/profile')); ?>">
-                                <i class="menu-icon typcn typcn-document-text"></i>
-                                <span class="menu-title">Identitas Diri</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
                                 <i class="menu-icon typcn typcn-coffee"></i>
-                                <span class="menu-title">Pengajuan Permohonan</span>
+                                <span class="menu-title">Kontent Website</span>
                                 <i class="menu-arrow"></i>
                             </a>
                             <div class="collapse" id="ui-basic">
                                 <ul class="nav flex-column sub-menu">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="<?php echo e(url('/permohonan/proses')); ?>">Proses</a>
+                                        <a class="nav-link" href="<?php echo e(url('/content/berita')); ?>">Berita</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="<?php echo e(url('/permohonan/selesai')); ?>">Selesai</a>
+                                        <a class="nav-link" href="<?php echo e(url('/content/videos')); ?>">Videos</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="<?php echo e(url('/permohonan/tertunda')); ?>">Tertunda</a>
+                                        <a class="nav-link" href="<?php echo e(url('/content/gallery')); ?>">Gallery</a>
                                     </li>
                                 </ul>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/forms/basic_elements.html">
-                                <i class="menu-icon typcn typcn-shopping-bag"></i>
-                                <span class="menu-title">FAQ</span>
-                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="<?php echo e(url('/logout')); ?>">
