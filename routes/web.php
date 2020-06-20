@@ -18,6 +18,8 @@ Route::POST("/Masterberita", "beritaControl@index");
 Route::POST("/MasterKategori", "kategoriControl@index");
 Route::POST("/MasterSubKategori", "subKategoriControl@index");
 Route::POST("/MasterVideos", "videosControl@index");
+Route::POST("/MasterGallery", "galleryControl@index");
+Route::POST("/MasterGalleryDetail", "galleryDetailControl@index");
 
 Route::GET("/login", "appControl@login");
 Route::POST("/login/loginSubmit", "appControl@loginSubmit");
